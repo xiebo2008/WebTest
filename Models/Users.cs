@@ -24,5 +24,10 @@ namespace TestWeb.Models
         /// 身份证号
         /// </summary>
         public string IDCard { set; get; }
+
+        /// <summary>
+        /// 学员积分
+        /// </summary>
+        public string Score { get; set; }
     }
 }

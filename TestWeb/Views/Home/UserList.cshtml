@@ -1,0 +1,31 @@
+﻿@using TestWeb.Models
+
+@{
+    List<Users> _userList = (List<Users>)ViewData["_userList"];
+    ViewBag.Title = "UserList";
+}
+
+
+
+
+<h2>UserList</h2>
+
+<table>
+    <tr>
+        <td>名字</td>
+        <td>性别</td>
+        <td>身份证号</td>
+    </tr>
+    @{
+        foreach (Users item in _userList)
+        {
+            <tr>
+                <td>@(item.UserName)</td>
+                <td>@(item.Sex)</td>
+                <td>@(item.IDCard)</td>
+            </tr>
+        }
+    }
+</table>
+
+
